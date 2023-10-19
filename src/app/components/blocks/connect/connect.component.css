@@ -1,0 +1,76 @@
+.connect-container {
+    height: 100vh;
+    background-color: #003b5d;
+}
+
+.connect-title {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect-title p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.connect-title p b {
+    color: #00baef;
+}
+
+.connect-block {
+    height: 80%;
+    display: flex;  
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.connect-card {
+    width: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect-img-block {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid #00baef;
+}
+
+.connect-img-block img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.connect-describe_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.connect-describe_block p {
+    text-align: center;
+}
+
+.connect-describe_block p:nth-child(1) {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.connect-describe_block p:nth-child(2) {
+    font-size: 20px;
+    color: #00baef;
+}
