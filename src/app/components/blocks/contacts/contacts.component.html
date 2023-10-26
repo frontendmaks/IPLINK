@@ -1,44 +1,79 @@
 <div class="contacts-container" id="contacts">
     <div class="application">
         <p>Залишити заявку на підключення</p>
-        <form class="feedback-form">
+        <form class="feedback-form" (ngSubmit)="onSubmit()">
             <div class="left-form">
                 <div class="form-group">
-                    <label for="first-name">Ім'я</label>
-                    <input type="text" id="first-name" name="first-name" required>
+                    <label for="fullname">Контактна особа<b>*</b></label>
+                    <input type="text" id="fullname" name="fullname" required 
+                        [(ngModel)]="formData.fullname" #fullname="ngModel" 
+                        [placeholder]="fullname.invalid && (fullname.dirty || fullname.touched) ? 'Поле потрібно заповнити' : ''">
                 </div>
-            
+                <div class="pplStatus-block">
+                    <input type="radio" name="pplStatus" value="Фізична особа" id="fizicalPerson" required 
+                        [(ngModel)]="formData.pplStatus" [ngModelOptions]="{standalone: true}" #fullname="ngModel"
+                        [placeholder]="pplStatus.invalid && (pplStatus.dirty || pplStatus.touched) ? 'Поле потрібно заповнити' : ''">
+                    <label for="fizicalPerson">Фізична особа</label>
+    
+                    <input type="radio" name="pplStatus" value="Юридична особа" id="legalPerson" required 
+                        [(ngModel)]="formData.pplStatus" [ngModelOptions]="{standalone: true}" #pplStatus="ngModel"
+                        [placeholder]="pplStatus.invalid && (pplStatus.dirty || pplStatus.touched) ? 'Поле потрібно заповнити' : ''">
+                    <label for="legalPerson">Юридична особа</label>
+                </div>
                 <div class="form-group">
-                    <label for="last-name">Прізвище</label>
-                    <input type="text" id="last-name" name="last-name" required>
+                    <label for="address">Адреса підключення інтернету<b>*</b></label>
+                    <textarea id="address" name="address" rows="4" required 
+                        [(ngModel)]="formData.address" #address="ngModel"
+                        [placeholder]="address.invalid && (address.dirty || address.touched) ? 'Поле потрібно заповнити' : ''"></textarea>
                 </div>
-            
                 <div class="form-group">
-                    <label for="phone">Телефон</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label for="pin">Примітки</label>
+                    <textarea id="pin" name="pin" rows="4" [(ngModel)]="formData.pin"></textarea>
                 </div>
-            
                 <div class="form-group">
-                    <label for="email">Електронна пошта</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Телефон<b>*</b></label>
+                    <input type="tel" id="phone" name="phone" required 
+                        [(ngModel)]="formData.phone" #phone="ngModel"
+                        [placeholder]="phone.invalid && (phone.dirty || phone.touched) ? 'Поле потрібно заповнити' : ''">
                 </div>
+                <div class="connection-block">
+                    <input type="radio" name="connectionType" value="Багатоквартирні будинки" id="multiApartmentRadio" required 
+                        [(ngModel)]="formData.connectionType" [ngModelOptions]="{standalone: true}" #connectionType="ngModel"
+                        [placeholder]="connectionType.invalid && (connectionType.dirty || connectionType.touched) ? 'Поле потрібно заповнити' : ''">
+                    <label for="multiApartmentRadio">Багатоквартирні будинки</label>
+    
+                    <input type="radio" name="connectionType" value="Приватний сектор" id="privateSectorRadio" required 
+                        [(ngModel)]="formData.connectionType" [ngModelOptions]="{standalone: true}" #connectionType="ngModel"
+                        [placeholder]="connectionType.invalid && (connectionType.dirty || connectionType.touched) ? 'Поле потрібно заповнити' : ''">
+                    <label for="privateSectorRadio">Приватний сектор</label>
+    
+                    <input type="radio" name="connectionType" value="Для бізнесу" id="businessRadio" required 
+                        [(ngModel)]="formData.connectionType" [ngModelOptions]="{standalone: true}" #connectionType="ngModel"
+                        [placeholder]="connectionType.invalid && (connectionType.dirty || connectionType.touched) ? 'Поле потрібно заповнити' : ''">
+                    <label for="businessRadio">Для бізнесу</label>
+                </div>
+                <button type="submit" class="submit-btn">Залишити заявку</button>
             </div>
             <div class="right-form">
-                <div class="form-group">
-                    <label for="address">Адреса підключення інтернету</label>
-                    <textarea id="address" name="address" rows="4" required></textarea>
-                </div>
                 <div class="form-img">
                     <p>Зателефонувати нам</p>
-                    <p>+380 (99) 999-99-99</p>
-                    <a href="tel:+380 (99) 999-99-99" class="call-icon" type="button">
+                    <p>+38 (067) 672-71-17</p>
+                    <a href="tel:+380676727117" class="call-icon" type="button">
                         <span class="material-symbols-outlined">
                             call
+                        </span>
+                    </a>
+                </div>
+                <div class="form-img">
+                    <p>Написати нам</p>
+                    <p>iplink.llc@gmail.com</p>
+                    <a href="mailto:iplink.llc@gmail.com" class="call-icon" type="button">
+                        <span class="material-symbols-outlined">
+                            mail
                         </span>
                     </a>
                 </div>
             </div>
         </form>
     </div>
-    <app-footer></app-footer>
 </div>

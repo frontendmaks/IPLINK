@@ -1,6 +1,6 @@
 <div class="header">
     <div class="header-logo">
-        <a href="#main">
+        <a (click)="scrollTo('main')">
             <img src="../../../../assets/favicon-removebg.png" alt="Logo">
         </a>
     </div>
@@ -9,8 +9,12 @@
             <li><a (click)="scrollTo('main')">Головна</a></li>
             <li><a (click)="scrollTo('about')">Про нас</a></li>
             <li><a (click)="scrollTo('plans')">Тарифи</a></li>
-            <!-- <li><a href="#">Залишити заявку</a></li> -->
             <li><a (click)="scrollTo('contacts')">Контакти</a></li>
         </ul>
+        <a href="https://my.iplink.lviv.ua" title="Особистий кабінет" target="_blank" class="header-account">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </a>
     </nav>
-</div>  
+</div>

@@ -22,11 +22,43 @@
 .title-container h1 {
     font-size: 110px;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
 }
 
-.title-container h3 {
-    font-size: 40px;
+.banner-contacts-phone {
+    margin-bottom: 15px;
+}
+
+.banner-contacts-phone, .banner-contacts-mail {
+    display: flex;
+    align-items: center;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.banner-contacts-phone > span:nth-child(1), .banner-contacts-mail > span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.banner-contacts-phone span, .banner-contacts-mail span {
+    font-size: 30px;
+}
+
+.socials-icons {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.socials-icons svg {
+    color: #003b5d;
+    height: 40px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.socials-icons svg:nth-child(1) {
+    margin-right: 30px;
 }
 
 .banner-btn {

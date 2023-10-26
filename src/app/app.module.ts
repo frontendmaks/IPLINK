@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './components/blocks/banner/banner.component';
@@ -27,9 +28,9 @@ import { ContactsComponent } from './components/blocks/contacts/contacts.compone
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
       {path: '', component: LandingComponent}
-      // {path: 'about', component: AboutComponent}
     ]),
   ],
   providers: [],
