@@ -13,6 +13,7 @@ import { AdvantagesComponent } from './components/blocks/advantages/advantages.c
 import { PlansComponent } from './components/blocks/plans/plans.component';
 import { ConnectComponent } from './components/blocks/connect/connect.component';
 import { ContactsComponent } from './components/blocks/contacts/contacts.component';
+import { TvComponent } from './components/blocks/tv/tv.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactsComponent } from './components/blocks/contacts/contacts.compone
     AdvantagesComponent,
     PlansComponent,
     ConnectComponent,
-    ContactsComponent
+    ContactsComponent,
+    TvComponent
   ],
   imports: [
     BrowserModule,
