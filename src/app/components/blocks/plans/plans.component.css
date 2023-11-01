@@ -43,7 +43,7 @@
 }
 
 .mdc-tab-indicator--active {
-    border-bottom: #00baef 3px solid !important;
+    /* border-bottom: #00baef 3px solid !important; */
     color: rgba(217, 245, 254, 0);
 }
 
@@ -117,7 +117,7 @@
 
 .plan-name h3 {
     font-size: 25px;
-    font-weight: bold;
+    margin: 0 0 7px;
 }
 
 .plan-details {
@@ -244,4 +244,9 @@
 
 .bussiness-speed .channels {
     font-size: 19px;
+}
+
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+    color: #00baef !important;
+    background-color:#00baef !important;
 }
