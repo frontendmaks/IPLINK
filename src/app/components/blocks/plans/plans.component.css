@@ -54,6 +54,10 @@
     --mat-tab-header-active-hover-indicator-color:#00baef;
 }
 
+.internet-bussiness .mat-mdc-tab-header {
+    --mdc-tab-indicator-active-indicator-height: 0px !important;
+}
+
 .mdc-tab-indicator--active {
     /* border-bottom: #00baef 3px solid !important; */
     color: rgba(217, 245, 254, 0);
