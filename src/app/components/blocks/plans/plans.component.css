@@ -1,12 +1,11 @@
 .plans-container {
     height: 100vh;
     background-color: rgba(217, 245, 254, 0.3);
-    /* padding: 10px 20px; */
 }
 
 .plans-title {
     padding: 40px 0;
-    height: 22%;
+    height: 16vh;
 }
 
 .plans-title p {
@@ -22,62 +21,222 @@
     color: #00baef;
 }
 
-.plans-cards-block {
-    display: flex;   
-    flex-wrap: wrap;
+.plans-body {
+    height: 87vh;
+}
+
+.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
+    flex-grow: 0 !important;
+    margin: 0 30px;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.mat-mdc-tab-labels {
+    justify-content: center;
+}
+
+.mdc-tab__text-label {
+    color: #003b5d !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mdc-tab-indicator--active {
+    border-bottom: #00baef 3px solid !important;
+    color: rgba(217, 245, 254, 0);
+}
+
+.mdc-tab-indicator--active .mdc-tab__text-label {
+    color: #00baef !important;
+    transition: background-color 0.5s ease;
+}
+
+.internet-multi-apartment, .internet-apartment, .internet-bussiness {
+    width: 100%;
+    display: flex;
     justify-content: space-around;
-    height: 78%;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 78vh;
+}
+
+.mat-mdc-tab-body-wrapper {
+    width: 98.9vw;
+}
+
+.internet-bussiness {
+    width: 100%;
+    height: 100%;
+}
+
+.bussiness-plans, .bussiness-speed {
+    height: 72vh;
     width: 100%;
 }
 
-.plan-card {
-    background: linear-gradient(45deg, #00baef 60%, #0056b3);
-    border: 1px solid #e1e1e1;
-    border-radius: 5px;
-    padding: 20px;
+.tv-plan-card {
+    background: #003b5d;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     margin: 10px;
-    width: calc(33.33% - 50px);
-    height: calc(50% - 50px);
+    width: calc(33.3% - 30px);
+    height: calc(50% - 30px);
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    min-width: 340px;
+    max-width: 450px;
 }
 
-.plan-card:hover {
+.tv-plan-card:hover {
     transform: scale(1.02);
-    cursor: pointer;
 }
 
-.plan-card h2 {
-    font-size: 24px;
-    margin-top: 0;
+.tv-card-title {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    /* padding: 20px 10px 0 10px; */
 }
 
-.plan-card p {
-    margin: 10px 0;
-    color: #003b5d;
-    font-weight: 700;
+.plan-name {
+    font-size: 27px;
+    font-weight: bold;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.plan-card button {
-    background: transparent;
+.plan-details {
+    height: 100px;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.tv-plans-block > .tv-plan-card:nth-child(1) .channels {
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.channels b {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.plan-details p {
+    font-size: 22px;
+    letter-spacing: 0px;
+}
+
+.price {
+    width: 80%;
+    padding: 10px 0 0 0;
+    background-color: #00baef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.price b {
+    font-size: 55px;
+    margin-right: 10px;
+}
+
+.price span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.channels,
+.movies {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.subscribe-button {
+    background-color: #00baef;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 7px 12px;
     border-radius: 5px;
-    border: 2px solid #003b5d;
+    border: 2px solid #00baef;
     cursor: pointer;
     font-weight: 600;
     transition: background 0.2s;
-    margin: 20px 0 0 0 ;
-    width: 150px;
+    margin: 0 0 10px 0;
+    width: 130px;
+    font-size: 16px;
 }
 
-.plan-card button:hover {
-    background: #003b5d;
+.internet-bussiness .mdc-tab__text-label {
+    color: #003b5d !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.internet-bussiness .mdc-tab-indicator--active {
+    border: 1px solid #00baef !important;
+    color: rgba(217, 245, 254, 0);
+    background-color: #00baef;
+
+}
+
+.internet-bussiness .mdc-tab-indicator--active .mdc-tab__text-label {
+    color: #fff !important;
+    transition: background-color 0.5s ease;
+}
+
+.internet-bussiness .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
+    margin: 15px 20px 0 0px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #003b5d;
+}
+
+.internet-bussiness .mat-mdc-tab-labels {
+    border: 1px solid rgba(217, 245, 254, 0.3);
+}
+
+.bussiness-plans, .bussiness-speed {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bussiness-speed .tv-plan-card {
+    width: calc(25% - 30px);
+}
+
+.bussiness-speed .plan-name {
+    font-size: 22px;
+}
+
+.bussiness-speed .price b {
+    font-size: 40px;
+}
+
+.bussiness-speed .price span {
+    font-size: 20px;
+}
+
+.bussiness-speed .channels {
+    font-size: 19px;
 }

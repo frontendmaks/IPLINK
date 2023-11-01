@@ -7,13 +7,14 @@ import { Component} from '@angular/core';
 })
 export class ContactsComponent {
   formData: any = {};
-  formValid: boolean = true;
+  // formValid: boolean = true;
 
   constructor() {}
 
   onSubmit() {
     if (this.isFormValid()) {
       if (this.isPhoneNumberValid(this.formData.phone)) {
+        alert(JSON.stringify(this.formData));
         console.log('Дані відправлено успішно', this.formData);
         this.resetForm();
       } else {
@@ -21,7 +22,7 @@ export class ContactsComponent {
         alert('Введіть коректний номер телефону');
       }
     } else {
-      this.formValid = false;
+      // this.formValid = false;
       console.error('Заповність всі поля');
       alert('Заповність всі поля');
     }
@@ -44,7 +45,7 @@ export class ContactsComponent {
 
   resetForm() {
     this.formData = {};
-    this.formValid = true;
+    // this.formValid = true;
   }
 
 }

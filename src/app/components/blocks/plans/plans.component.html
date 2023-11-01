@@ -1,51 +1,343 @@
 <div class="plans-container" id="plans">
     <div class="plans-title">
-        <p>Найкращі тарифи у Львові</p>
-        <p>Підключай інтернет від <b>IPLINK</b> 
-        та відчуй всі переваги швидкого та якісного інтернету!</p>
+        <!-- <p>Найкращі тарифи у Львові</p> -->
+        <p>Підключай інтернет від <b>IPLINK</b>
+            та відчуй всі переваги швидкого та якісного інтернету!</p>
     </div>
-    <div class="plans-cards-block">
-        <div class="plan-card">
-            <h2>План A</h2>
-            <p>Швидкість: 100 Мбіт/с</p>
-            <p>Обмеження трафіку: Немає</p>
-            <p>Ціна: $29.99/місяць</p>
-            <button>Обрати</button>
-        </div>
-        <div class="plan-card">
-            <h2>План B</h2>
-            <p>Швидкість: 250 Мбіт/с</p>
-            <p>Обмеження трафіку: 500 ГБ</p>
-            <p>Ціна: $39.99/місяць</p>
-            <button>Обрати</button>
-        </div>
-        <div class="plan-card">
-            <h2>План C</h2>
-            <p>Швидкість: 500 Мбіт/с</p>
-            <p>Обмеження трафіку: Немає</p>
-            <p>Ціна: $49.99/місяць</p>
-            <button>Обрати</button>
-        </div>
-        <div class="plan-card">
-            <h2>План D</h2>
-            <p>Швидкість: 1 Гбіт/с</p>
-            <p>Обмеження трафіку: Немає</p>
-            <p>Ціна: $59.99/місяць</p>
-            <button>Обрати</button>
-        </div>
-        <div class="plan-card">
-            <h2>План C</h2>
-            <p>Швидкість: 500 Мбіт/с</p>
-            <p>Обмеження трафіку: Немає</p>
-            <p>Ціна: $49.99/місяць</p>
-            <button>Обрати</button>
-        </div>
-        <div class="plan-card">
-            <h2>План D</h2>
-            <p>Швидкість: 1 Гбіт/с</p>
-            <p>Обмеження трафіку: Немає</p>
-            <p>Ціна: $59.99/місяць</p>
-            <button>Обрати</button>
-        </div>
-    </div>
+    <mat-tab-group animationDuration="700ms" class="plans-body">
+        <mat-tab label="Багатоквартирні будинки">
+            <div class="internet-multi-apartment">
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 35 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>100</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 50 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>120</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 100 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>150</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 200 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>210</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 300 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>290</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 1000 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>390</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Приватний сектор">
+            <div class="internet-apartment">
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 35 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>120</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 50 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>160</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 100 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>200</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 200 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>270</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 300 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>360</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+                <div class="tv-plan-card">
+                    <div class="tv-card-title">
+                        <div class="plan-name">
+                            <h3>до 1000 Мбіт/с</h3>
+                        </div>
+                        <div class="price"><b>430</b> <span>грн./місяць</span></div>
+                    </div>
+                    <div class="plan-details">
+                        <p class="channels">Без обмежень по трафіку!</p>
+                    </div>
+                    <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Для бізнесу">
+            <div class="internet-bussiness">
+                <mat-tab-group>
+                    <mat-tab label="Тарифи для бізнесу">
+                        <div class="bussiness-plans">
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>до 20 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>200</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Без обмежень по трафіку!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>до 30 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>300</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Без обмежень по трафіку!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>до 50 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>420</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Без обмежень по трафіку!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>до 100 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>510</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Без обмежень по трафіку!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>до 200 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>780</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Без обмежень по трафіку!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>до 250 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>960</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Без обмежень по трафіку!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Гарантована швидкість">
+                        <div  class="bussiness-speed">
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>10 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>150</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Гарантована швидкість!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>20 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>240</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Гарантована швидкість!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>30 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>360</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Гарантована швидкість!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>50 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>600</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Гарантована швидкість!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>70 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>750</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Гарантована швидкість!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>100 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>960</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Гарантована швидкість!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>150 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>1350</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Гарантована швидкість!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                            <div class="tv-plan-card">
+                                <div class="tv-card-title">
+                                    <div class="plan-name">
+                                        <h3>200 Мбіт/с</h3>
+                                    </div>
+                                    <div class="price"><b>1650</b> <span>грн./місяць</span></div>
+                                </div>
+                                <div class="plan-details">
+                                    <p class="channels">Гарантована швидкість!</p>
+                                </div>
+                                <button class="subscribe-button" (click)="scrollTo('contacts')">Підключити</button>
+                            </div>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
 </div>

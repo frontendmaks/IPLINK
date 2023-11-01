@@ -14,6 +14,8 @@ import { PlansComponent } from './components/blocks/plans/plans.component';
 import { ConnectComponent } from './components/blocks/connect/connect.component';
 import { ContactsComponent } from './components/blocks/contacts/contacts.component';
 import { TvComponent } from './components/blocks/tv/tv.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { TvComponent } from './components/blocks/tv/tv.component';
     RouterModule.forRoot([
       {path: '', component: LandingComponent}
     ]),
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
