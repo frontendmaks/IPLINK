@@ -39,7 +39,7 @@ export class ContactsComponent {
   }
 
   isPhoneNumberValid(phoneNumber: string): boolean {
-    const phonePattern = /^(\+?(\d{1,})?)?(\d{10})$/;
+    const phonePattern = /^\+380\d{9}$/;
     return phonePattern.test(phoneNumber);
   }
 

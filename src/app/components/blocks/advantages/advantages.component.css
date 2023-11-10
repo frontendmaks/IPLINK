@@ -22,7 +22,7 @@
     width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     color: #fff;
     background-color: #003b5d;
@@ -45,6 +45,7 @@
     width: 80%;
     text-indent: 20px;
     line-height: 30px;
+    text-align: center;
 }
 
 .right-block {
@@ -60,8 +61,9 @@
 .advantage-option {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 10px 0;
+    width: 100%;
 }
 
 .advantage-option span {
@@ -83,4 +85,15 @@
     display: flex;
     flex-direction: column;
 
+}
+
+.advantage-text h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.advantage-text p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }

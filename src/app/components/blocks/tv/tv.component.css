@@ -23,7 +23,11 @@
 }
 
 .tv-footer-text p b {
+    font-size: 27px;
+    font-family: 'Times New Roman', Times;
     border-bottom: 1px solid #00baef;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 
 .tv-footer-text {
@@ -74,6 +78,7 @@
     border-radius: 10px 10px 0 0;
     padding: 20px 10px 0 10px;
     position: relative;
+    justify-content: flex-start;
 }
 
 .plan-name {
@@ -113,7 +118,7 @@
     border-radius: 50%;
     background-color: #003b5d;
     position: absolute;
-    bottom: -60px;
+    bottom: -65px;
     left: calc(50% - 60px);
     display: flex;
     justify-content: center;
@@ -124,6 +129,7 @@
 
 .price b {
     font-size: 50px;
+    margin: 0 0 10px 0;
 }
 
 .price span {

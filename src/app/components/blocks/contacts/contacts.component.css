@@ -53,6 +53,11 @@ input {
     padding: 10px;
 }
 
+textarea, input {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -104,7 +109,7 @@ input {
 }
 
 .form-img a {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border: 2px solid #00baef;
     border-radius: 50%;
     color: #00baef;
@@ -112,7 +117,7 @@ input {
 }
 
 .form-img a span {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
     padding: 15px;
@@ -176,4 +181,19 @@ input[type="radio"]:checked+label {
 .submit-btn:hover {
     background-color: #00baef;
     color: #fff;
+}
+
+.socials-icons {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-icons svg {
+    fill: #00baef;
+    height: 35px;
+    margin: 0px 0px 0 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }

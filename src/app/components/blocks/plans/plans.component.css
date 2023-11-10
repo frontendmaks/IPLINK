@@ -98,7 +98,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     margin: 10px;
-    width: calc(33.3% - 30px);
+    width: calc(25% - 30px);
     height: calc(50% - 30px);
     color: #fff;
     display: flex;
@@ -106,7 +106,7 @@
     align-items: center;
     justify-content: space-between;
     min-width: 340px;
-    max-width: 450px;
+    /* max-width: 450px; */
 }
 
 .tv-plan-card:hover {
@@ -115,10 +115,11 @@
 
 .tv-card-title {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 10px 10px 0 0;
     /* padding: 20px 10px 0 10px; */
 }
@@ -164,7 +165,7 @@
 }
 
 .price {
-    width: 70%;
+    width: 80%;
     height: 55px;
     padding: 10px 0 0 0;
     background-color: #00baef;
@@ -175,7 +176,7 @@
 }
 
 .price b {
-    font-size: 55px;
+    font-size: 50px;
     margin-right: 10px;
 }
 

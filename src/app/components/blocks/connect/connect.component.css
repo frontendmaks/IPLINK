@@ -63,6 +63,11 @@
     text-align: center;
 }
 
+.connect-describe_block p b {
+    font-family: 'Times New Roman', Times;
+    font-size: 21px;
+}
+
 .connect-describe_block p:nth-child(1) {
     color: #fff;
     font-weight: bold;
