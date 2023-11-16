@@ -1,0 +1,122 @@
+.modal-container {
+  width: 60vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #003b5d;
+}
+
+.modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  padding: 10px;
+}
+
+.modal-title button {
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.modal-title button:hover {
+  cursor: pointer;
+  color: #00baef;
+}
+
+.mdc-data-table__table {
+  min-width: 0 !important;
+}
+
+.modal-table {
+  display: flex;
+  justify-content: center;
+  background-color: #003b5d;
+  overflow: auto;
+}
+
+table {
+  width: 100% !important;
+  height: 90%;
+  border-collapse: collapse;
+  background-color: #003b5d !important;
+}
+
+tbody tr {
+  height: 70px !important;
+  padding: 10px !important;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #003b5d;
+  color: #fff;
+}
+
+td {
+  background-color: #fff;
+}
+
+tbody tr:hover {
+  background-color: rgba(0, 186, 239, 0.3);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00baef;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #003b5d; 
+}
+
+thead .mat-column-tv {
+  font-size: 25px;
+  font-weight: bold;  
+  padding-left: 25px;
+}
+
+thead .mat-column-plan1,thead .mat-column-plan2,thead .mat-column-plan3,thead .mat-column-plan4 {
+  font-size: 12px;
+  font-weight: bold; 
+  text-align: center; 
+  width: 135px;
+  padding: 0 12px 0 12px !important;
+}
+
+tbody .mat-column-tv {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  height: 100%;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+tbody .mat-column-tv img {
+  margin-right: 40px;
+  height: 48px;
+  padding: 3px 0;
+}
+
+tbody .mat-column-plan1,tbody .mat-column-plan2,tbody .mat-column-plan3,tbody .mat-column-plan4 {
+  text-align: center;
+  font-size: 20px;
+}

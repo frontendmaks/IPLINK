@@ -16,6 +16,9 @@ import { ContactsComponent } from './components/blocks/contacts/contacts.compone
 import { TvComponent } from './components/blocks/tv/tv.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ModalTVComponent } from './components/blocks/modal-tv/modal-tv.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     PlansComponent,
     ConnectComponent,
     ContactsComponent,
-    TvComponent
+    TvComponent,
+    ModalTVComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,9 @@ import { MatTabsModule } from '@angular/material/tabs';
       {path: '', component: LandingComponent}
     ]),
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
