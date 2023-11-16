@@ -1,1 +1,235 @@
-.plans-container{height:100vh;background-color:rgba(217,245,254,.3)}.plans-title{padding:40px 0;height:16vh}.plans-title p{font-size:30px;font-weight:700;padding:10px 0;text-align:center;color:#003b5d;line-height:38px}.plans-title p b{color:#00baef}.plans-body{height:87vh}.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{flex-grow:0!important;margin:0 30px;height:100%;padding:10px 20px}.mat-mdc-tab-labels{justify-content:center}.mdc-tab__text-label{color:#003b5d!important;font-size:20px;font-weight:700}.mat-mdc-tab-group,.mat-mdc-tab-nav-bar{--mdc-tab-indicator-active-indicator-color:#00baef;--mat-tab-header-pagination-icon-color:#000;--mat-tab-header-active-label-text-color:#00baef;--mat-tab-header-active-ripple-color:#00baef;--mat-tab-header-inactive-ripple-color:#00baef;--mat-tab-header-active-focus-label-text-color:#00baef;--mat-tab-header-active-hover-label-text-color:#00baef;--mat-tab-header-active-focus-indicator-color:#00baef;--mat-tab-header-active-hover-indicator-color:#00baef}.internet-bussiness .mat-mdc-tab-header{--mdc-tab-indicator-active-indicator-height:0px!important}.mdc-tab-indicator--active{color:rgba(217,245,254,0)}.mdc-tab-indicator--active .mdc-tab__text-label{color:#00baef!important;transition:background-color .5s}.internet-apartment,.internet-bussiness,.internet-multi-apartment{width:100%;display:flex;justify-content:space-around;flex-wrap:wrap;align-items:center;height:78vh}.mat-mdc-tab-body-wrapper{width:98.9vw}.internet-bussiness{width:100%;height:100%}.bussiness-speed .tv-plan-card,.tv-plan-card{width:calc(25% - 30px)}.bussiness-plans,.bussiness-speed{height:72vh}.tv-plan-card{background:#003b5d;border-radius:10px;text-align:center;box-shadow:0 2px 4px rgba(0,0,0,.1);transition:transform .3s;margin:10px;height:calc(50% - 30px);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:space-between;min-width:340px}.price,.subscribe-button{background-color:#00baef}.tv-plan-card:hover{transform:scale(1.02)}.tv-card-title{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:10px 10px 0 0}.plan-name{height:50px;padding:10px 0 0;display:flex;align-items:center;justify-content:center}.plan-name h3{font-size:25px;margin:0 0 7px}.plan-details{height:100px;width:100%;padding:0 15px;margin-top:10px;display:flex;align-items:center;justify-content:center;font-weight:700}.tv-plans-block>.tv-plan-card:first-child .channels{font-size:28px;letter-spacing:1px;font-weight:700}.channels b{font-size:28px;font-weight:700}.plan-details p{font-size:22px;letter-spacing:0}.price{width:80%;height:55px;padding:10px 0 0;display:flex;justify-content:center;align-items:center;border-radius:10px}.price b{font-size:50px;margin-right:10px}.price span{font-size:25px;font-weight:700}.channels,.movies{font-size:20px;margin:5px 0}.subscribe-button{color:#fff;border:2px solid #00baef;padding:7px 12px;border-radius:5px;cursor:pointer;font-weight:600;transition:background .2s;margin:0 0 10px;width:130px;font-size:16px}.internet-bussiness .mdc-tab__text-label{color:#003b5d!important;font-size:20px;font-weight:700}.internet-bussiness .mdc-tab-indicator--active{border:1px solid #00baef!important;color:rgba(217,245,254,0);background-color:#00baef}.internet-bussiness .mdc-tab-indicator--active .mdc-tab__text-label{color:#fff!important;transition:background-color .5s}.internet-bussiness .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{margin:15px 20px 0 0;padding:10px 40px;border-radius:10px;border:1px solid #003b5d}.internet-bussiness .mat-mdc-tab-labels{border:1px solid rgba(217,245,254,.3)}.bussiness-plans,.bussiness-speed{width:100%;display:flex;justify-content:space-around;flex-wrap:wrap;align-items:center}.bussiness-speed .plan-name{font-size:22px}.bussiness-speed .price b{font-size:40px}.bussiness-speed .price span{font-size:20px}.bussiness-speed .channels{font-size:19px}md-tabs md-ink-bar,md-tabs.md-default-theme md-ink-bar{color:#00baef!important;background-color:#00baef!important}.bussiness-speed .tv-plan-card{width:calc(29% - 25px)}
+.plans-container {
+    height: 100vh;
+    background-color: rgba(217, 245, 254, 0.3);
+}
+.plans-title {
+    padding: 40px 0;
+    height: 16vh;
+}
+.plans-title p {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 0;
+    text-align: center;
+    color: #003b5d;
+    line-height: 38px;
+}
+.plans-title p b {
+    color: #00baef;
+}
+.plans-body {
+    height: 87vh;
+}
+.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs > .mat-mdc-tab-header .mat-mdc-tab {
+    flex-grow: 0 !important;
+    margin: 0 30px;
+    height: 100%;
+    padding: 10px 20px;
+}
+.mat-mdc-tab-labels {
+    justify-content: center;
+}
+.mdc-tab__text-label {
+    color: #003b5d !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+.mat-mdc-tab-group,
+.mat-mdc-tab-nav-bar {
+    --mdc-tab-indicator-active-indicator-color: #00baef;
+    --mat-tab-header-pagination-icon-color: #000;
+    --mat-tab-header-active-label-text-color: #00baef;
+    --mat-tab-header-active-ripple-color: #00baef;
+    --mat-tab-header-inactive-ripple-color: #00baef;
+    --mat-tab-header-active-focus-label-text-color: #00baef;
+    --mat-tab-header-active-hover-label-text-color: #00baef;
+    --mat-tab-header-active-focus-indicator-color: #00baef;
+    --mat-tab-header-active-hover-indicator-color: #00baef;
+}
+.internet-bussiness .mat-mdc-tab-header {
+    --mdc-tab-indicator-active-indicator-height: 0px !important;
+}
+.mdc-tab-indicator--active {
+    color: rgba(217, 245, 254, 0);
+}
+.mdc-tab-indicator--active .mdc-tab__text-label {
+    color: #00baef !important;
+    transition: background-color 0.5s;
+}
+.internet-apartment,
+.internet-bussiness,
+.internet-multi-apartment {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 78vh;
+}
+.mat-mdc-tab-body-wrapper {
+    width: 98.9vw;
+}
+.internet-bussiness {
+    width: 100%;
+    height: 100%;
+}
+.bussiness-speed .tv-plan-card,
+.tv-plan-card {
+    width: calc(25% - 30px);
+}
+.bussiness-plans,
+.bussiness-speed {
+    height: 72vh;
+}
+.tv-plan-card {
+    background: #003b5d;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 10px;
+    height: calc(50% - 30px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 340px;
+}
+.price,
+.subscribe-button {
+    background-color: #00baef;
+}
+.tv-plan-card:hover {
+    transform: scale(1.02);
+}
+.tv-card-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+.plan-name {
+    height: 50px;
+    padding: 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plan-name h3 {
+    font-size: 25px;
+    margin: 0 0 7px;
+}
+.plan-details {
+    height: 100px;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.tv-plans-block > .tv-plan-card:first-child .channels {
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.channels b {
+    font-size: 28px;
+    font-weight: 700;
+}
+.plan-details p {
+    font-size: 22px;
+    letter-spacing: 0;
+}
+.price {
+    width: 80%;
+    height: 55px;
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.price b {
+    font-size: 50px;
+    margin-right: 10px;
+}
+.price span {
+    font-size: 25px;
+    font-weight: 700;
+}
+.channels,
+.movies {
+    font-size: 20px;
+    margin: 5px 0;
+}
+.subscribe-button {
+    color: #fff;
+    border: 2px solid #00baef;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+    margin: 0 0 10px;
+    width: 130px;
+    font-size: 16px;
+}
+.internet-bussiness .mdc-tab__text-label {
+    color: #003b5d !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+.internet-bussiness .mdc-tab-indicator--active {
+    border: 1px solid #00baef !important;
+    color: rgba(217, 245, 254, 0);
+    background-color: #00baef;
+}
+.internet-bussiness .mdc-tab-indicator--active .mdc-tab__text-label {
+    color: #fff !important;
+    transition: background-color 0.5s;
+}
+.internet-bussiness .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs > .mat-mdc-tab-header .mat-mdc-tab {
+    margin: 15px 20px 0 0;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #003b5d;
+}
+.internet-bussiness .mat-mdc-tab-labels {
+    border: 1px solid rgba(217, 245, 254, 0.3);
+}
+.bussiness-plans,
+.bussiness-speed {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.bussiness-speed .plan-name {
+    font-size: 22px;
+}
+.bussiness-speed .price b {
+    font-size: 40px;
+}
+.bussiness-speed .price span {
+    font-size: 20px;
+}
+.bussiness-speed .channels {
+    font-size: 19px;
+}
+md-tabs md-ink-bar,
+md-tabs.md-default-theme md-ink-bar {
+    color: #00baef !important;
+    background-color: #00baef !important;
+}
+
+.bussiness-speed .tv-plan-card {
+    width: calc(29% - 25px);
+    /* height: calc(50% - 30px); */
+}
