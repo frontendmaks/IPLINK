@@ -14,7 +14,7 @@ export class TvComponent {
     let dialogRef = this.dialog.open(ModalTVComponent); 
   
     dialogRef.afterClosed().subscribe(result => { 
-      console.log('Close', result);
+      // console.log('Close', result);
     }); 
   } 
 
