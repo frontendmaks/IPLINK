@@ -51,35 +51,33 @@
   border-bottom: 1px solid #00baef;
 }
 
-.header-account {
+.account-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-decoration: none;
   margin-bottom: 5px;
+  color: #003b5d;
 }
 
-.header-account span{
+.account-box:hover {
+  cursor: pointer;
+  color: #00baef;
+
+  .header-account-icon {
+    border: 2px solid #00baef;
+  }
+}
+
+.header-account-icon{
   font-size: 37px;
-  color: #003b5d;
   border-radius: 50%;
   border: 2px solid #003b5d;
   padding: 3px;
 }
 
-.header-account span:hover {
-  cursor: pointer;
-  color: #00baef;
-  border: 2px solid #00baef;
-}
-
-.header-account-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .header-account-title {
-  color: #003b5d;
   font-size: 12px;
   font-weight: bold;
 }
