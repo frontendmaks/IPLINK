@@ -33,6 +33,8 @@
     margin-bottom: 30px;
     letter-spacing: 1px;
     padding: 5px 10px;
+    text-align: center;
+    width: 90%;
 }
 
 .left-block h1 b {
@@ -42,7 +44,7 @@
 .left-block p {
     font-size: 20px;
     display: inline-block;
-    width: 80%;
+    width: 90%;
     text-indent: 20px;
     line-height: 30px;
     text-align: center;
@@ -96,4 +98,53 @@
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 1535px) {
+    .advantages-container {
+        padding: 100px 50px;
+    }
+
+    .advantages-center-block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .advantages-center-block .left-block {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .advantages-center-block .left-block h1, .advantages-center-block .left-block p {
+        width: 75%;
+    }
+
+    .advantages-center-block .right-block {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .advantages-center-block .right-block {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .advantages-center-block .left-block {
+        margin-bottom: 70px;
+    }
+
+    .advantages-center-block .left-block h1 {
+        line-height: 55px;   
+    }
+
+    .advantages-container {
+        padding: 50px;
+    }
 }
