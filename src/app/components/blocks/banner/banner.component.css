@@ -1,5 +1,5 @@
 .banner-container {
-    height: 100vh;
+    height: 90vh;
     background-image: url('../../../../assets/banner-img.jpg');
     background-size: cover;
     background-position: center;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.banner-img-container img{
+.banner-img-container img {
     height: 600px;
 }
 
@@ -38,18 +38,21 @@
     margin-bottom: 15px;
 }
 
-.banner-contacts-phone, .banner-contacts-mail {
+.banner-contacts-phone,
+.banner-contacts-mail {
     display: flex;
     align-items: center;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     color: #003b5d;
 }
 
-.banner-contacts-phone > span:nth-child(1), .banner-contacts-mail > span:nth-child(1) {
+.banner-contacts-phone>span:nth-child(1),
+.banner-contacts-mail>span:nth-child(1) {
     margin-right: 10px;
 }
 
-.banner-contacts-phone span, .banner-contacts-mail span {
+.banner-contacts-phone span,
+.banner-contacts-mail span {
     font-size: 30px;
 }
 
@@ -57,7 +60,6 @@
     height: 70px;
     width: 100%;
     display: flex;
-    /* justify-content: center; */
 }
 
 .socials-icons svg {
@@ -74,7 +76,7 @@
 .banner-btn {
     position: absolute;
     bottom: 40px;
-    left: 45%;
+    left: calc(50% - 96px);
     padding: 10px 20px;
     border: 1px solid #003b5d;
     border-radius: 5px;
@@ -87,4 +89,11 @@
 
 .banner-btn:hover {
     bottom: 41px;
+}
+
+@media screen and (max-width: 930px) {
+    .banner-contacts-phone,
+    .banner-contacts-mail{
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+    }
 }

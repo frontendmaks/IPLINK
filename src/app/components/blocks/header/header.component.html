@@ -1,25 +1,45 @@
 <div class="header">
     <div class="header-logo">
-        <a (click)="scrollTo('main')">
-            <img src="../../../../assets/favicon-removebg.png" alt="Logo">
-        </a>
+      <a (click)="scrollTo('main')">
+        <img src="../../../../assets/favicon-removebg.png" alt="Logo">
+      </a>
     </div>
     <nav class="header-menu">
-        <ul>
-            <li><a (click)="scrollTo('main')">Головна</a></li>
-            <li><a (click)="scrollTo('about')">Про нас</a></li>
-            <li><a (click)="scrollTo('plans')">Тарифи</a></li>
-            <li><a (click)="scrollTo('contacts')">Контакти</a></li>
-        </ul>
-        <div class="header-account-container">
-            <a href="https://my.iplink.lviv.ua" title="Особистий кабінет" target="_blank" class="account-box">
-                <span class="material-symbols-outlined header-account-icon">
-                    person
-                </span>
-                <span class="header-account-title">
-                    Особистий кабінет
-                </span>
-            </a>
+      <ul *ngIf="!isMenuOpen">
+        <li><a (click)="scrollTo('main')">Головна</a></li>
+        <li><a (click)="scrollTo('about')">Про нас</a></li>
+        <li><a (click)="scrollTo('plans')">Тарифи</a></li>
+        <li><a (click)="scrollTo('contacts')">Контакти</a></li>
+      </ul>
+      <div class="burger-menu" (click)="toggleMenu()" *ngIf="!isMenuOpen">
+        <div class="burger-icon">
+          &#9776;
         </div>
+      </div>
+      <div class="header-account-container">
+        <a href="https://my.iplink.lviv.ua" title="Особистий кабінет" target="_blank" class="account-box">
+          <span class="material-symbols-outlined header-account-icon">
+            person
+          </span>
+          <span class="header-account-title">
+            Особистий кабінет
+          </span>
+        </a>
+      </div>
+      <div class="mobile-menu" *ngIf="isMenuOpen">
+        <ul>
+          <li><a (click)="scrollTo('main')">Головна</a></li>
+          <li><a (click)="scrollTo('about')">Про нас</a></li>
+          <li><a (click)="scrollTo('plans')">Тарифи</a></li>
+          <li><a (click)="scrollTo('contacts')">Контакти</a></li>
+        </ul>
+        <div class="close-btn-block">
+            <button (click)="toggleMenu()">
+                <span class="material-symbols-outlined">
+                  close
+                </span>
+              </button>
+        </div>
+      </div>
     </nav>
-</div>
+  </div>
