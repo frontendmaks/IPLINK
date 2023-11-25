@@ -79,3 +79,63 @@
     font-size: 20px;
     color: #00baef;
 }
+
+@media screen and (max-width: 1300px) {
+    .connect-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect-card {
+        width: 70%;
+        flex-direction: row;
+    }
+
+    .connect-block {
+        padding: 0px 30px 70px 30px
+    }
+
+    .connect-img-block img {
+        height: 170px;
+        width: 170px;
+    }
+
+    .connect-describe_block {
+        margin: 0;
+        width: 100%;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .connect-title {
+        padding: 0 20px;
+    }
+
+    .connect-title p {
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .connect-card {
+        width: 90%;
+    }
+
+    .connect-img-block img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .connect-card {
+        flex-direction: column;
+    }
+
+    .connect-describe_block {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
