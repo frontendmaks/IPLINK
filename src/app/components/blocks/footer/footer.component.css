@@ -77,3 +77,13 @@
         height: 4vh;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .footer-title p{
+        font-size: 15px;
+    }
+
+    .footer-title p b{
+        font-size: 20px;
+    }
+}
