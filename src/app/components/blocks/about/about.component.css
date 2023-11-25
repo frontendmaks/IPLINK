@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 1200px) {
     .about-center-block {
-        height: 85vh;
+        height: 75vh;
         background-position: top;
         background-size: 70%;
         justify-content: flex-end;
@@ -86,7 +86,7 @@
 
 @media screen and (max-width: 1100px) {
     .about-center-block {
-        background-size: 80%;
+        background-size: 95%;
     }
 
     .about-text {
@@ -96,7 +96,7 @@
 
 @media screen and (max-width: 1000px) {
     .about-center-block {
-        height: 80vh;
+        height: 70vh;
     }
 
     .about-text {
@@ -148,9 +148,5 @@
     .description {
         font-size: 14px;
         padding: 0;
-    }
-
-    .about-text {
-        /* padding: 0 10px 10px 10px; */
     }
 }

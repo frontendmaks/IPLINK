@@ -11,7 +11,6 @@
     width: 100%;
     height: 100%;
     display: flex;
-    display: none;
 }
 
 .left-block, .right-block {
@@ -98,7 +97,7 @@
 .advantage-text p {
     font-size: 18px;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 1535px) {
@@ -130,22 +129,89 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .advantages-center-block .right-block {
         width: 95%;
     }
 }
 
-@media screen and (max-width: 750px) {
-    .advantages-center-block .left-block {
-        margin-bottom: 70px;
+@media screen and (max-width: 890px) {
+    .left-block .left-block-text{
+        display: none;
     }
 
+    .advantages-center-block .left-block {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 750px) {
     .advantages-center-block .left-block h1 {
-        line-height: 55px;   
+        line-height: 55px;  
+        margin-bottom: 0;
     }
 
     .advantages-container {
-        padding: 50px;
+        padding: 50px 15px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .advantages-container {
+        padding: 30px 10px;
+    }
+
+    .advantages-center-block .left-block h1 {
+        height: 100px;
+        width: 100%;
+    } 
+
+    .advantages-center-block .left-block {
+        height: fit-content;
+        /* margin-bottom: 20px; */
+    }
+
+    .advantage-option span {
+        font-size: 30px;
+    }
+
+    .advantage-text h1 {
+        font-size: 20px;
+    }
+
+    .advantage-text p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .advantages-container {
+        max-height: 100vh;
+    }
+
+    .advantages-center-block .left-block h1 {
+        height: fit-content;
+        font-size: 30px;    
+        padding: 0;
+    }
+
+    .advantages-center-block .left-block {
+        margin-bottom: 0;
+    }
+
+    .right-block {
+        padding: 10px 20px;
+    }
+
+    .advantage-text h1 {
+        font-size: 17px;
+        margin-bottom: 7px;
+        line-height: 20px;
+    }
+
+    .advantage-text p {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0;
     }
 }
