@@ -151,7 +151,7 @@
   .mobile-menu {
     position: absolute;
     background-color: rgba(217, 245, 254, 1);
-    top: 8vh;
+    top: 11vh;
     left: 0;
     width: 100%;
     height: 91vh;
@@ -271,5 +271,9 @@
 
   .header-logo img {
     height: 90%;
+  }
+
+  .mobile-menu {
+    top: 9vh;
   }
 }
