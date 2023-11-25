@@ -62,7 +62,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     margin: 10px;
-    width: calc(25% - 30px);
+    min-width: calc(25% - 30px);
     height: calc(100% - 30px);
     color: #fff;
     display: flex;
@@ -190,6 +190,7 @@
     }
 
     .tv-plans-block {
+        align-items: center;
         height: 100%;
     }
 
@@ -198,12 +199,18 @@
     }
 
     .tv-plan-card {
-        min-width: calc(45% - 30px);
-        height: calc(50% - 30px);
+        height: calc(80% - 30px);
     }
 
     .tv-footer-text {
         height: 10%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .tv-plan-card {
+        min-width: calc(45% - 30px);
+        height: calc(50% - 30px);
     }
 }
 
@@ -214,6 +221,6 @@
 
     .tv-plan-card {
         min-width: calc(80% - 30px);
-        height: calc(50% - 30px);
+        /* height: calc(50% - 30px); */
     }
 }
