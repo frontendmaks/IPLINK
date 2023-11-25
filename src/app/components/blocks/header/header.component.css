@@ -1,6 +1,4 @@
 .header {
-  /* position: absolute; */
-  /* top: 0; */
   width: 100%;
   height: 13vh;
   background-color: rgba(217, 245, 254, 1);
@@ -58,7 +56,7 @@
   align-items: center;
   flex-direction: column;
   text-decoration: none;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   color: #003b5d;
 }
 
@@ -93,7 +91,21 @@
   }
 
   .header-logo {
-    height: 80%;
+    height: 100%;
+  }
+
+  .header-menu {
+    height: 100%;
+  }
+
+  .header-account-icon {
+    font-size: 32px;
+  }
+
+  .account-box {
+    height: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -101,8 +113,8 @@
   .burger-menu {
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin-right: 20px;
+    padding: 17px 10px 10px 10px;
+    margin-right: 10px;
     cursor: pointer;
   }
 
@@ -120,25 +132,29 @@
   }
 
   .header {
-    height: 10vh;
+    height: 11vh;
   }
 
   .header-logo {
-    height: 90%;
+    height: 100%;
   }
 
   .header-account-title {
-    font-size: 16px;
+    font-size: 10px;
     margin-top: 4px;
+  }
+
+  .header-account-icon {
+    font-size: 25px;
   }
 
   .mobile-menu {
     position: absolute;
     background-color: rgba(217, 245, 254, 1);
-    top: 10vh;
+    top: 8vh;
     left: 0;
-    width: 100vw;
-    height: 90vh;
+    width: 100%;
+    height: 91vh;
     z-index: 999;
     display: flex;
     flex-direction: column;
@@ -196,5 +212,64 @@
     color: #00baef;
     transform: rotate(180deg);
     transition: transform ease 0.6s;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    padding: 0 15px 0 25px;
+  }
+
+  .header-logo img {
+    height: 90%;
+  }
+
+  .header-account-title {
+    display: none;
+  }
+
+  .header-account-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-account-container span {
+    font-size: 25px;
+  } 
+
+  .header-menu {
+    height: 100%;
+  }
+
+  .burger-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    padding: 17px 10px 10px 10px;
+  }
+
+  .burger-icon {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .mobile-menu > ul > li {
+    font-size: 19px;
+    margin: 10px 0;
+  }
+
+  .account-box {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header {
+    height: 9vh;
+  }
+
+  .header-logo img {
+    height: 90%;
   }
 }

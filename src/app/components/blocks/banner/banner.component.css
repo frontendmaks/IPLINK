@@ -30,7 +30,7 @@
     font-size: 40px;
     text-shadow: -4px -4px 6px #003b5d;
     margin-bottom: 35px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     font-weight: 500;
 }
 
@@ -95,5 +95,67 @@
     .banner-contacts-phone,
     .banner-contacts-mail{
         text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title-container {
+        margin-left: 20px;
+    }
+
+    .title-container h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .title-container h3 {
+        font-size: 30px;
+    }
+
+    .banner-contacts-phone span, .banner-contacts-mail span{
+        font-size: 20px;
+    }
+
+    .socials-icons svg:nth-child(1) {
+        margin-right: 10px;
+    }
+
+    .socials-icons svg {
+        height: 30px;
+    }
+
+    .banner-btn {
+        font-size: 13px;
+        padding: 7px 12px;
+        left: calc(50% - 70px);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .banner-container {
+        height: 91vh;
+    }
+
+    .title-container h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .title-container h3 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .banner-contacts-phone span, .banner-contacts-mail span{
+        font-size: 15px;
+    }
+
+    .banner-contacts-phone {
+        margin-bottom: 0;
+    }
+
+    .banner-btn {
+        font-size: 11px;
+        left: calc(50% - 62px);
     }
 }
