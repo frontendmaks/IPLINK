@@ -80,7 +80,7 @@
     color: #00baef;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1305px) {
     .connect-block {
         flex-direction: column;
         align-items: center;
@@ -88,16 +88,17 @@
 
     .connect-card {
         width: 70%;
+        height: calc(33.33% - 40px);
         flex-direction: row;
     }
 
-    .connect-block {
-        padding: 0px 30px 70px 30px
+    .connect-img-block {
+        padding: 20px;
     }
 
     .connect-img-block img {
-        height: 170px;
-        width: 170px;
+        height: 120px;
+        width: 120px;
     }
 
     .connect-describe_block {
@@ -129,13 +130,35 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .connect-card {
-        flex-direction: column;
+@media screen and (max-width: 515px) {
+    .connect-title p {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .connect-img-block {
+        padding: 10px;
+        border: 3px solid #00baef;
+    }
+
+    .connect-block {
+        padding: 0 0 30px 0;
     }
 
     .connect-describe_block {
         padding-left: 0;
-        margin-top: 20px;
+    }
+
+    .connect-describe_block p:nth-child(2) {
+        padding-left: 15px;
+        font-size: 15px;
+    }
+
+    .connect-describe_block p:nth-child(2) b {
+        font-size: 16px;
+    }
+    
+    .connect-describe_block p:nth-child(1) {
+        font-size: 20px;
     }
 }
