@@ -229,7 +229,14 @@ md-tabs.md-default-theme md-ink-bar {
     background-color: #00baef !important;
 }
 
-/* .bussiness-speed .tv-plan-card {
-    width: calc(29% - 25px); 
-    height: calc(50% - 30px); 
-} */
+@media screen and (max-width: 1150px) {
+    .bussiness-speed .tv-plan-card, .tv-plan-card {
+        width: calc(45% - 30px);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .bussiness-speed .tv-plan-card, .tv-plan-card {
+        width: calc(90% - 30px);
+    }
+}
