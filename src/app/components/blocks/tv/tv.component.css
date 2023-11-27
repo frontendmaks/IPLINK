@@ -40,8 +40,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
-
 }
 
 .tv-footer-text p {
@@ -54,7 +52,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    display: none;
 
 }
 
@@ -199,7 +196,8 @@
     }
 
     .tv-title-block {
-        height: 15%;
+        height: 10%;
+        padding: 15px 30px;
     }
 
     .tv-plan-card {
@@ -218,6 +216,48 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .tv-title-block, .tv-footer-text {
+        height: fit-content;
+    }
+
+    .tv-title-block p{
+        font-size: 23px;
+        margin: 0;
+        line-height: 36px;
+    }
+
+    .tv-footer-text p  {
+        font-size: 17px;
+        line-height: 24px;
+        margin: 0;
+    }
+
+    .tv-footer-text p b {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .tv-title-block p{
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .tv-footer-text p  {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .tv-footer-text p b {
+        font-size: 20px;
+    }
+
+    /* .tv-plan-card {
+        height: 60%;
+    } */
+}
+
 @media screen and (max-width: 800px) {
     .tv-plans-block {
         overflow: auto;
@@ -225,6 +265,51 @@
 
     .tv-plan-card {
         min-width: calc(80% - 30px);
-        /* height: calc(50% - 30px); */
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .tv-title-block {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .tv-title-block p{
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .tv-footer-text p  {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .tv-footer-text p b {
+        font-size: 18px; 
+    }
+}
+@media screen and (max-width: 450px) {
+    .tv-title-block {
+        padding: 15px 10px;
+    }
+
+    .tv-plan-card {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .price {
+        height: 100px;
+        width: 100px;
+        left: calc(50% - 50px);
+    }
+
+    .plan-name {
+        font-size: 21px;
+    }
+
+    .tv-plan-card {
+        height: 80%;
     }
 }
