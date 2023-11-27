@@ -252,10 +252,6 @@
     .tv-footer-text p b {
         font-size: 20px;
     }
-
-    /* .tv-plan-card {
-        height: 60%;
-    } */
 }
 
 @media screen and (max-width: 800px) {
@@ -279,13 +275,16 @@
     }
 
     .tv-footer-text p  {
-        font-weight: 500;
         font-size: 12px;
         line-height: 15px;
     }
 
     .tv-footer-text p b {
         font-size: 18px; 
+    }
+
+    .tv-plan-card {
+        height: 60%;
     }
 }
 @media screen and (max-width: 450px) {
@@ -310,6 +309,6 @@
     }
 
     .tv-plan-card {
-        height: 80%;
+        height: 90%;
     }
 }
