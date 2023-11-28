@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, ViewEncapsulation } from '@angular/core';
 
 interface TableRow {
   tv: {
@@ -11,6 +11,12 @@ interface TableRow {
   plan4: boolean;
 }
 
+interface PlansRow {
+  name: string;
+  shortName: string;
+  channels: number;
+}
+
 @Component({
   selector: 'app-modal-tv',
   templateUrl: './modal-tv.component.html',
@@ -19,9 +25,40 @@ interface TableRow {
 })
 export class ModalTVComponent {
   tableData: TableRow[] = [];
+  plansData: PlansRow[] = [];
+  mobileView?: boolean;
+  screenWidth: number = 0;
+
   constructor() {}
 
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.resize();
+  }
+
   ngOnInit() {
+    this.resize();
+
+    this.plansData = [
+      {
+        name: 'Безкоштовний',
+        shortName: 'Free',
+        channels: 36
+      },{
+        name: 'Базовий',
+        shortName: 'S',
+        channels: 203
+      },{
+        name: 'Стандарт+HD',
+        shortName: 'M',
+        channels: 278
+      },{
+        name: 'Максимум+HD',
+        shortName: 'L',
+        channels: 297
+      }
+    ]
+
     this.tableData = [
       {
         tv: {
@@ -2617,5 +2654,14 @@ export class ModalTVComponent {
         plan4: true
       }
     ]
+  }
+
+  resize() {
+    this.screenWidth = window.innerWidth;
+    if (this.screenWidth < 980) {
+      this.mobileView = true;
+    } else {
+      this.mobileView = false;
+    }
   }
 }

@@ -311,4 +311,8 @@
     .tv-plan-card {
         height: 90%;
     }
+
+    .plan-details p {
+        font-size: 17px;
+    }
 }

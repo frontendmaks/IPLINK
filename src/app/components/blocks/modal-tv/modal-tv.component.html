@@ -17,7 +17,10 @@
       </ng-container>
 
       <ng-container matColumnDef="plan1">
-        <th mat-header-cell *matHeaderCellDef> Безкоштовний </th>
+        <th mat-header-cell *matHeaderCellDef>
+          <span class="plan-name"> Безкоштовний </span>
+          <span class="plan-channels"> 36 </span>
+        </th>
         <td mat-cell *matCellDef="let row" [style.color]="row.plan1 ? '#0ed145' : 'grey'">
           <span class="material-symbols-outlined">
             radio_button_checked
@@ -26,7 +29,10 @@
       </ng-container>
 
       <ng-container matColumnDef="plan2">
-        <th mat-header-cell *matHeaderCellDef> Базовий </th>
+        <th mat-header-cell *matHeaderCellDef>
+          <span class="plan-name"> Базовий </span>
+          <span class="plan-channels"> 203 </span>
+        </th>
         <td mat-cell *matCellDef="let row" [style.color]="row.plan2 ? '#0ed145' : 'grey'">
           <span class="material-symbols-outlined">
             radio_button_checked
@@ -35,7 +41,10 @@
       </ng-container>
 
       <ng-container matColumnDef="plan3">
-        <th mat-header-cell *matHeaderCellDef> Стандарт+HD </th>
+        <th mat-header-cell *matHeaderCellDef>
+          <span class="plan-name"> Стандарт+HD </span>
+          <span class="plan-channels"> 278 </span>
+        </th>
         <td mat-cell *matCellDef="let row" [style.color]="row.plan3 ? '#0ed145' : 'grey'">
           <span class="material-symbols-outlined">
             radio_button_checked
@@ -44,7 +53,10 @@
       </ng-container>
 
       <ng-container matColumnDef="plan4">
-        <th mat-header-cell *matHeaderCellDef> Максимум+HD </th>
+        <th mat-header-cell *matHeaderCellDef>
+          <span class="plan-name"> Максимум+HD </span>
+          <span class="plan-channels"> 297 </span>
+        </th>
         <td mat-cell *matCellDef="let row" [style.color]="row.plan4 ? '#0ed145' : 'grey'">
           <span class="material-symbols-outlined">
             radio_button_checked
@@ -54,6 +66,39 @@
 
       <tr mat-header-row *matHeaderRowDef="['tv', 'plan1', 'plan2', 'plan3', 'plan4']"></tr>
       <tr mat-row *matRowDef="let row; columns: ['tv', 'plan1', 'plan2', 'plan3', 'plan4']"></tr>
-    </table> 
+    </table>
+  </div>
+  <div class="mobile-table">
+    <div class="mobile-table-header">
+      <h2 class="mobile-table-title">Порівняти телеканали</h2>
+      <div class="mobile-table-title-body">
+        <div class="plan-block" *ngFor="let row of plansData">
+          <h2>{{ this.mobileView ? row.shortName : row.name }}</h2>
+          <span>{{ row.channels }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-table-body">
+      <div class="mobile-body-row" *ngFor="let row of tableData">
+        <div class="row-name">
+          <img [src]="row.tv.photo" alt="Photo">
+          <span>{{ row.tv.name }}</span>
+        </div>
+        <div class="row-radio">
+          <span class="material-symbols-outlined" [style.color]="row.plan1 ? '#0ed145' : 'grey'">
+            radio_button_checked
+          </span>
+          <span class="material-symbols-outlined" [style.color]="row.plan2 ? '#0ed145' : 'grey'">
+            radio_button_checked
+          </span>
+          <span class="material-symbols-outlined" [style.color]="row.plan3 ? '#0ed145' : 'grey'">
+            radio_button_checked
+          </span>
+          <span class="material-symbols-outlined" [style.color]="row.plan4 ? '#0ed145' : 'grey'">
+            radio_button_checked
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

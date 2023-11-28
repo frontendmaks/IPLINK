@@ -80,22 +80,25 @@ tbody tr:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #003b5d; 
+  background-color: #003b5d;
 }
 
 thead .mat-column-tv {
   font-size: 25px;
-  font-weight: bold;  
+  font-weight: bold;
   padding-left: 25px;
 }
 
-thead .mat-column-plan1,thead .mat-column-plan2,thead .mat-column-plan3,thead .mat-column-plan4 {
+thead .mat-column-plan1,
+thead .mat-column-plan2,
+thead .mat-column-plan3,
+thead .mat-column-plan4 {
   font-size: 13px;
-  font-weight: bold; 
-  text-align: center; 
+  font-weight: bold;
+  text-align: center;
   width: 125px;
   padding: 0 12px 0 12px !important;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
   letter-spacing: 1px;
 }
 
@@ -110,7 +113,7 @@ tbody .mat-column-tv {
 tbody .mat-column-tv span {
   font-size: 15px;
   font-weight: bold;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
   letter-spacing: 1px;
 }
 
@@ -120,9 +123,115 @@ tbody .mat-column-tv img {
   padding: 3px 0;
 }
 
-tbody .mat-column-plan1,tbody .mat-column-plan2,tbody .mat-column-plan3,tbody .mat-column-plan4 {
+tbody .mat-column-plan1,
+tbody .mat-column-plan2,
+tbody .mat-column-plan3,
+tbody .mat-column-plan4 {
   text-align: center;
   font-size: 20px;
+}
+
+.plan-name {
+  height: fit-content;
+}
+
+.plan-channels {
+  color: grey;
+}
+
+.mobile-table-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.mobile-table-title {
+  padding-left: 45px;
+  font-size: 35px !important;
+}
+
+.mobile-table-title-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: calc(100% - 9px);
+}
+
+.plan-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  padding: 5px;
+  width: 20%;
+  /* min-width: 145px; */
+}
+
+.plan-block h2 {
+  margin: 0;
+}
+
+.plan-block span {
+  font-size: 18px;
+}
+
+.mobile-table-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75vh;
+  overflow: auto;
+}
+
+.mobile-body-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.mobile-body-row:nth-child(even) {
+  background-color: rgba(0, 186, 239, 0.3);
+}
+
+.row-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-left: 45px;
+}
+
+.row-name img {
+  height: 70px;
+  margin-right: 40px;
+}
+
+.row-name span {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.row-radio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row-radio span {
+  width: 20%;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.mobile-table {
+  display: none;
 }
 
 @media screen and (max-width: 1650px) {
@@ -138,16 +247,78 @@ tbody .mat-column-plan1,tbody .mat-column-plan2,tbody .mat-column-plan3,tbody .m
 }
 
 @media screen and (max-width: 1200px) {
-  .modal-container {
-    width: 90vw;
-  }
-
-  .modal-title {
-    min-width: 910px;
-  }
-
   .modal-table {
-    min-width: 910px;
-    overflow: auto;
+    display: none;
+  }
+
+  .mobile-table {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .mobile-table-title {
+    font-size: 28px !important;
+  }
+
+  .plan-block, .row-radio span {
+    width: 16%;
+  }
+
+  .row-name img {
+    height: 50px;
+    margin-right: 25px;
+  }
+
+  .row-name span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mobile-table-title {
+    font-size: 24px !important;
+    padding-left: 20px;
+  }
+
+  .row-name {
+    padding-left: 20px;
+  }
+
+  .mobile-table-body {
+    height: 68vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobile-table-title {
+    font-size: 20px !important;
+  }
+
+  .plan-block, .row-radio span {
+    margin: 0 7px;
+  }
+
+  .row-name img {
+    height: 35px;
+    margin-right: 15px;
+  }
+
+  .row-name span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .mobile-table-body {
+    height: 63vh;
+  }
+
+  .plan-block h2 {
+    font-size: 18px;
+  }
+
+  .plan-block span {
+    font-size: 14px;
   }
 }
