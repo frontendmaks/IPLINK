@@ -236,18 +236,6 @@ tbody .mat-column-plan4 {
   display: none;
 }
 
-@media screen and (max-width: 1650px) {
-  .modal-container {
-    /* width: 70vw; */
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .modal-container {
-    /* width: 75vw; */
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .modal-table {
     display: none;
@@ -276,10 +264,6 @@ tbody .mat-column-plan4 {
   .row-name span {
     font-size: 18px;
   }
-
-  /* .modal-container {
-    width: 95vw;
-  } */
 }
 
 @media screen and (max-width: 450px) {
