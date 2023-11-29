@@ -3,9 +3,8 @@
     background-color: rgba(217, 245, 254, 0.3);
 }
 .plans-title {
-    padding: 40px 0;
-    height: 16vh;
-    display: none;
+    padding: 40px 0 0 0;
+    /* height: 16vh; */
 
 }
 .plans-title p {
@@ -21,7 +20,6 @@
 }
 .plans-body {
     height: 87vh;
-    display: none;
 
 }
 .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs > .mat-mdc-tab-header .mat-mdc-tab {
@@ -29,7 +27,6 @@
     margin: 0 30px;
     height: 100%;
     padding: 10px 20px;
-    display: none;
 
 }
 .mat-mdc-tab-labels {
@@ -71,11 +68,10 @@
     flex-wrap: wrap;
     align-items: center;
     height: 78vh;
-    display: none;
 
 }
 .mat-mdc-tab-body-wrapper {
-    width: 98.9vw;
+    width: 97vw;
 }
 .internet-bussiness {
     width: 100%;
@@ -103,7 +99,6 @@
     align-items: center;
     justify-content: space-between;
     min-width: 340px;
-    display: none;
 
 }
 .price,
@@ -242,6 +237,17 @@ md-tabs.md-default-theme md-ink-bar {
 @media screen and (max-width: 1150px) {
     .bussiness-speed .tv-plan-card, .tv-plan-card {
         width: calc(45% - 30px);
+    }
+
+    .plans-container {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .internet-bussiness .mat-mdc-tab-labels {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
