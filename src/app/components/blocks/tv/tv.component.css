@@ -297,7 +297,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .price {
         height: 100px;
         width: 100px;
@@ -309,7 +309,7 @@
     }
 
     .tv-plan-card {
-        height: 90%;
+        height: 95%;
     }
 
     .plan-details p {
