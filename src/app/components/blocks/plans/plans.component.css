@@ -77,9 +77,20 @@
     width: 100%;
     height: 100%;
 }
-.bussiness-speed .tv-plan-card,
+.bussiness-speed .tv-plan-card {
+    width: calc(30% - 30px);
+}
 .tv-plan-card {
     width: calc(25% - 30px);
+}
+.internet-multi-apartment .tv-plan-card,
+.internet-apartment .tv-plan-card {
+    width: calc(30% - 30px);
+    height: calc(55% - 30px);
+}
+.internet-bussiness .bussiness-plans .tv-plan-card {
+    width: 30%;
+    margin: 0 25px;
 }
 .bussiness-plans,
 .bussiness-speed {
@@ -212,7 +223,7 @@
 .bussiness-speed {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
