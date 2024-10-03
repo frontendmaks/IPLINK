@@ -235,6 +235,7 @@
 
     .tv-footer-text p b {
         font-size: 22px;
+        padding-bottom: 0px;
     }
 }
 
@@ -276,11 +277,11 @@
 
     .tv-footer-text p  {
         font-size: 12px;
-        line-height: 15px;
+        line-height: 14px;
     }
 
     .tv-footer-text p b {
-        font-size: 18px; 
+        font-size: 15px; 
     }
 
     .tv-plan-card {
